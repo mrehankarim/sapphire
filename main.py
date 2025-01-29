@@ -184,7 +184,7 @@ elif options == "Products":
                 if os.path.exists(row["Image"]):
                     st.image(row["Image"], width=200)
                 else:
-                    st.error(f"Image not found: {row['Image']}")
+                    st.error(f"Image not found: {f"static/${row['Image']}"}")
             with col2:
                 st.markdown(f'<h3>{row["Name"]}</h3>', unsafe_allow_html=True)
                 st.markdown(f'<p><strong>Price:</strong> ₹{row["Price"]}</p>', unsafe_allow_html=True)

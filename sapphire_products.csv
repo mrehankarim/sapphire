@@ -1,5 +1,5 @@
 ID,Name,Price,Stock,Image
-1,Product 1,550,29,/product_1.jpg
+1,Product 1,550,29,product_1.jpg
 2,Product 2,600,28,static/product_2.jpg
 3,Product 3,650,27,static/product_3.jpg
 4,Product 4,700,26,static/product_4.jpg
