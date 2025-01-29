@@ -182,7 +182,7 @@ elif options == "Products":
             col1, col2 = st.columns([1, 3])
             with col1:
                 if os.path.exists(row["Image"]):
-                    st.image(row["Image"], width=200)
+                    st.image(f"static/${row['Image']}", width=200)
                 else:
                     st.error(f"Image not found: {f"static/${row['Image']}"}")
             with col2:
