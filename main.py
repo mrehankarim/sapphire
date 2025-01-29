@@ -147,7 +147,7 @@ elif options == "Collection":
             st.markdown('<div class="card">', unsafe_allow_html=True)
             col1, col2 = st.columns([1, 3])
             with col1:
-                image_path = f"product_{index+1}.jpg"
+                image_path = f"static/product_{index+1}.jpg"
                 if os.path.exists(image_path):
                     st.image(image_path, width=200)
                 else:
