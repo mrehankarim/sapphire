@@ -120,10 +120,10 @@ sort_option = st.sidebar.selectbox("Sort by price", ["None", "Low to High", "Hig
 if options == "Home":
     st.markdown('<p class="big-font">Explore our latest collection of clothing and accessories.</p>', unsafe_allow_html=True)
     
-    if os.path.exists("images/product_1.jpg"):
-        st.image("images/product_32.jpg", width=800, use_container_width=True)
+    if os.path.exists("static/product_1.jpg"):
+        st.image("static/product_32.jpg", width=800, use_container_width=True)
     else:
-        st.error("Image not found: images/product_1.jpg")
+        st.error("Image not found: static/product_1.jpg")
 
 # Collection Page
 elif options == "Collection":
@@ -147,7 +147,7 @@ elif options == "Collection":
             st.markdown('<div class="card">', unsafe_allow_html=True)
             col1, col2 = st.columns([1, 3])
             with col1:
-                image_path = f"images/product_{index+1}.jpg"
+                image_path = f"static/product_{index+1}.jpg"
                 if os.path.exists(image_path):
                     st.image(image_path, width=200)
                 else:
