@@ -181,7 +181,7 @@ elif options == "Products":
             st.markdown('<div class="card">', unsafe_allow_html=True)
             col1, col2 = st.columns([1, 3])
             with col1:
-                if os.path.exists(row["Image"]):
+                if os.path.exists(f"static/{row["Image"]}"):
                     st.image(f"static/{row['Image']}", width=200)
                 else:
                     st.error(f"Image not found: {f"static/{row['Image']}"}")
